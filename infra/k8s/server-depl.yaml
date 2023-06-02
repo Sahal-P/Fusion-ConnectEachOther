@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-depl
+spec: 
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      labels:
+        app: server
+    spec:
+      containers: 
+        - name: server
+          image: sahal1/server
+          env:
+            - name: POSTGRES_HOST
+              value: server-postgres-srv
+            - name: KAFKA_BOOTSTRAP_SERVERS
+              value: kafka-srv:9092
+            - name: REDIS_URL
+              value: redis://redis-service:6379/1
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: server-srv
+spec:
+  selector:
+    app: server
+  ports:
+    - name: server
+      protocol: TCP
+      port: 8000
+      targetPort: 8000

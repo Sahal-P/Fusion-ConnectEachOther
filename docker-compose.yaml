@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  auth:
+    build: ./authentication
+    container_name: auth
+    command: python test.py runserver 0.0.0.0:8000
+    # python manage.py runserver 0.0.0.0:8000
+
+    volumes:
+        - .:/usr/src/app/
+    ports:
+      - 8001:8000
+    environment:
+      - DEBUG=1
+      - DJANGO_ALLOWED_HOSTS=localhost, 127.0.0.1
+      - CELERY_BROKER=redis://redis:6379/0
+      - CELERY_BACKEND=redis://redis:6379/0
+
+
+
+  kafka:
+    image: bitnami/kafka:latest
+    ports:
+      - 9092:9092
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+    depends_on:
+      - zookeeper
+
+  zookeeper:
+    image: bitnami/zookeeper:latest
+    ports:
+      - 2181:2181
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+
+  server:
+    build: ./server
+    container_name: server
+    command: python test.py runserver 0.0.0.0:8000
+    volumes:
+      - ./receiver:/usr/src/app/
+    ports:
+      - 8002:8000
+    environment:
+      - DEBUG=1
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+
+  postgres_auth:
+    image: postgres:latest
+    container_name: postgres_auth
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_DB=auth_database
+      - POSTGRES_USER=auth_user
+      - POSTGRES_PASSWORD=auth_password
+
+  postgres_server:
+    image: postgres:latest
+    container_name: postgres_server
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_DB=server_database
+      - POSTGRES_USER=server_user
+      - POSTGRES_PASSWORD=server_password

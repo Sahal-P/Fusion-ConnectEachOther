@@ -1,0 +1,3 @@
+[submodule "authenticate"]
+	path = authenticate
+	url = https://github.com/Sahal-P/Fusion-Auth-Service-with-Clean-Architecture.git

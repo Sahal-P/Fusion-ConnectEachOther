@@ -1,0 +1,121 @@
+.feed_window {
+    display: flex;
+    flex-direction: column;
+    flex: 0.55;
+    /* 82 */
+    height: 100vh;
+    background-color: #26272b;
+    color: gray;
+    align-items: center;
+    position: relative;
+}
+.feed_message_window {
+    display: flex;
+    flex-direction: column;
+    flex: 0.27;
+    /* 82 */
+    height: 100vh;
+    background-color: #1e1f22;
+    color: gray;
+    align-items: center;
+    position: relative;
+}
+
+.top_notification{
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.feed_scroller_base{
+    overflow: hidden scroll;
+    /* padding-right: 16px; */
+    padding: 20px;
+    height: 100%;
+    position: relative;
+
+    box-sizing: border-box;
+    min-height: 0;
+    flex: 1;
+}
+.feed_scroller_base::-webkit-scrollbar {
+    display: none;
+}
+
+.feed_base{
+    max-width: 1050px;
+    min-width: 350px;
+    height: 100%;
+}
+
+.message_base{
+    margin: 20px;
+    /* background-color: #26272b; */
+    height: 100%;
+}
+
+.feed_layout{
+    max-width: 1608px;
+    margin: 0 auto;
+
+}
+.feed_image_base{
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+
+.feed_img{
+    display: flex;
+    max-height: 500px;
+    width: 100%;
+    /* height: auto; */
+}
+
+/* @media only screen and (max-width: 1584px){
+    .feed_img{
+        width: 100%;
+    }
+} */
+@media only screen and (max-width: 1242px){
+    .feed_img{
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.feed_header{
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 40px;
+    background-color: #1e1f22;
+}
+
+.feed_options{
+    height: 40px;
+    background-color: #1e1f22;
+}
+.feed_footer{
+    height: 40px;
+    background-color: #1e1f22;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.feed_avatar_base{
+    margin: 10px;
+
+}
+.feed_avatar{
+    border-radius: 50%;
+    object-fit: contain;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}

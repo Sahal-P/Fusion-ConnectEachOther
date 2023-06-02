@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-postgres-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-postgres
+  template:
+    metadata:
+      labels:
+        app: auth-postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres
+          env:
+            - name: POSTGRES_DB
+              value: "fusion_auth"
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: django-postgres-secret
+                  key: fusion_auth_user
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: django-postgres-secret
+                  key: fusion_auth_password
+          ports:
+            - containerPort: 5432
+
+          volumeMounts:
+            - name: postgres-persistent-storage
+              mountPath: /var/lib/postgresql/data
+              subPath: postgres
+      volumes:
+        - name: postgres-persistent-storage
+          persistentVolumeClaim:
+            claimName: postgres-pvc
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-postgres-srv
+spec:
+  selector:
+    app: auth-postgres
+  ports:
+    - name: auth-postgres
+      protocol: TCP
+      port: 5432
+      targetPort: 5432
+  type: ClusterIP

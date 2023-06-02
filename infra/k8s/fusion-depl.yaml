@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fusion-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fusion
+  template:
+    metadata:
+      labels:
+        app: fusion
+    spec:
+      containers:
+        - name: fusion
+          image: sahal1/fusion
+         
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fusion-srv
+spec:
+  selector:
+    app: fusion
+  ports:
+    - name: fusion
+      protocol: TCP
+      port: 8000
+      targetPort: 8000
