@@ -22,7 +22,7 @@ import GroupVoice from './components/voice/GroupVoice';
 import { Channels } from './components/channels/Channels';
 import Direct from './components/direct/Direct';
 import VideoChat from './components/video/VideoChat';
-const isDemo = true
+const isDemo = false
 
 function App() {
 

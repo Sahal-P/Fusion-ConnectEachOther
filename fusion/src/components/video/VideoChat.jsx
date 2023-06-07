@@ -27,8 +27,8 @@ const VideoChat = () => {
   const localVideoRef = useRef()
   const remoteVideoRef = useRef()
   const pc = useRef(new RTCPeerConnection(null))
+  const [socket, setSocket] = useState(null)
 
-  let socket
 
   useEffect(()=>{
 
@@ -39,12 +39,16 @@ const VideoChat = () => {
       if(data.sender==User.username){
         return
       }
-      if(data.type === 'offer' )
-      setRemoteDiscription(data.message)
-      // setRemoteUser(data.sender)
+      if(data.type === 'offer' ){
+        setRemoteDiscription(data.message)
+        console.log('data sender :' ,data.sender);
+
+        setRemoteUser(data.sender)
+      }
       if(data.type === 'answer'){
         setRemoteDiscription(data.message)
-        // setRemoteUser(data.sender)
+        console.log('data sender :' ,data.sender);
+        setRemoteUser(data.sender)
       
       }
       if(data.type === 'icecandidates'){
@@ -82,7 +86,11 @@ const VideoChat = () => {
           sender: `${User.username}`,
           message: e.candidate
         };
-        socket.send(JSON.stringify(message));
+        if (socket) { // Add a null check for the socket variable
+          socket.send(JSON.stringify(message));
+        }else {
+          _socket.send(JSON.stringify(message))
+        }
       }
       
     }
@@ -93,11 +101,13 @@ const VideoChat = () => {
     }
 
     _pc.ontrack = (e) => {
+      console.log(e,'on track----------');
       remoteVideoRef.current.srcObject = e.streams[0]
     }
 
     pc.current = _pc
-    socket = _socket
+    // socket = _socket
+    setSocket(_socket)
     // return () => {
     //   socket.disconnect();
     // };
