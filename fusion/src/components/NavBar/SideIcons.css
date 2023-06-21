@@ -1,4 +1,4 @@
-.servers{
+.servers {
     min-width: 80px;
     position: relative;
     display: flex;
@@ -11,6 +11,7 @@
     transition: margin-left 0.5s;
 
 }
+
 /* @media only screen and (max-width: 1320px){
     .servers{
         flex-basis: content;
@@ -18,20 +19,23 @@
     }
 } */
 
-@media only screen and (max-width: 557px){
-    .servers{
+@media only screen and (max-width: 557px) {
+    .servers {
         display: none;
-        
+
     }
-    .Explorewindow{
+
+    .Explorewindow {
         flex: 1;
     }
 
 }
+
 .servers::-webkit-scrollbar {
     display: none;
 }
-.logo > img{
+
+.logo>img {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -41,7 +45,7 @@
 
 }
 
-.server-logo > img{
+.server-logo>img {
     height: 60px;
     width: 60px;
     border-radius: 30%;
@@ -50,7 +54,7 @@
 
 }
 
-.logo::before{
+.logo::before {
     content: "";
     height: 2px;
     width: 35px;
@@ -59,7 +63,7 @@
     left: 25%;
 }
 
-.logo::after{
+.logo::after {
     content: "";
     height: 35px;
     width: 3px;
@@ -70,27 +74,31 @@
 
 }
 
-.server-logo{
+.server-logo {
     position: relative;
 }
-.server-logo > img{
+
+.server-logo>img {
     transition: 0.3s ease-in-out;
 }
-.server-logo > img:hover{
+
+.server-logo>img:hover {
     cursor: pointer;
     border-radius: 30%;
     transition: 0.3s ease-in-out;
 }
-.server-start{
+
+.server-start {
     position: relative;
     height: 31vh;
     overflow-y: scroll;
 }
+
 .server-start::-webkit-scrollbar {
     display: none;
 }
 
-.server-logo::after{
+.server-logo::after {
     content: "";
     height: 10px;
     width: 10px;
@@ -100,7 +108,7 @@
     border-radius: 50%;
 }
 
-.message_count{
+.message_count {
     position: absolute;
     color: wheat;
     font-weight: 600;
@@ -114,7 +122,7 @@
     top: 70%;
 }
 
-.list_item_{
+.list_item_ {
     margin-top: 6px;
     display: flex;
     justify-content: center;
@@ -122,13 +130,14 @@
     margin-bottom: 10px;
 }
 
-.item_line{
+.item_line {
     height: 2px;
     width: 32px;
     border-radius: 1px;
     background-color: white;
 }
-.select_indicator{
+
+.select_indicator {
     position: absolute;
     top: 10px;
     left: 0;
@@ -139,7 +148,8 @@
     align-items: center;
     justify-content: flex-start;
 }
-.item_indicator{
+
+.item_indicator {
     position: absolute;
     display: block;
     width: 10px;

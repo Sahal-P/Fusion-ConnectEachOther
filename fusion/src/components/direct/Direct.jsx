@@ -1,13 +1,13 @@
-import SideIcons from "../NavBar/SideIcons"
-import DirectSideBar from "./DirectSideBar"
+import SideIcons from "../NavBar/SideIcons";
+import DirectSideBar from "./DirectSideBar";
 
 const Direct = () => {
   return (
     <>
-   <SideIcons/>
-    <DirectSideBar/>
+      <SideIcons />
+      <DirectSideBar />
     </>
-  )
-}
+  );
+};
 
-export default Direct
+export default Direct;

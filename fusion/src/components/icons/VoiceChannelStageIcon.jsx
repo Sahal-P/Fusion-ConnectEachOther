@@ -1,4 +1,3 @@
-
 const VoiceChannelStageIcon = () => {
   return (
     <svg
@@ -17,7 +16,7 @@ const VoiceChannelStageIcon = () => {
         fill="currentColor"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default VoiceChannelStageIcon
+export default VoiceChannelStageIcon;

@@ -9,6 +9,7 @@
     align-items: center;
     position: relative;
 }
+
 .feed_message_window {
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
     position: relative;
 }
 
-.top_notification{
+.top_notification {
     display: none;
     position: relative;
     top: 0;
@@ -30,7 +31,7 @@
     height: 50px;
 }
 
-.feed_scroller_base{
+.feed_scroller_base {
     overflow: hidden scroll;
     /* padding-right: 16px; */
     padding: 20px;
@@ -41,35 +42,37 @@
     min-height: 0;
     flex: 1;
 }
+
 .feed_scroller_base::-webkit-scrollbar {
     display: none;
 }
 
-.feed_base{
+.feed_base {
     max-width: 1050px;
     min-width: 350px;
     height: 100%;
 }
 
-.message_base{
+.message_base {
     margin: 20px;
     /* background-color: #26272b; */
     height: 100%;
 }
 
-.feed_layout{
+.feed_layout {
     max-width: 1608px;
     margin: 0 auto;
 
 }
-.feed_image_base{
+
+.feed_image_base {
     position: relative;
     text-align: center;
     margin-bottom: 30px;
     min-height: 200px;
 }
 
-.feed_img{
+.feed_img {
     display: flex;
     max-height: 500px;
     width: 100%;
@@ -81,15 +84,15 @@
         width: 100%;
     }
 } */
-@media only screen and (max-width: 1242px){
-    .feed_img{
+@media only screen and (max-width: 1242px) {
+    .feed_img {
         height: 70vh;
         width: 100%;
         object-fit: cover;
     }
 }
 
-.feed_header{
+.feed_header {
     display: flex;
     align-items: center;
     border-top-left-radius: 5px;
@@ -98,21 +101,24 @@
     background-color: #1e1f22;
 }
 
-.feed_options{
+.feed_options {
     height: 40px;
     background-color: #1e1f22;
 }
-.feed_footer{
+
+.feed_footer {
     height: 40px;
     background-color: #1e1f22;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.feed_avatar_base{
+
+.feed_avatar_base {
     margin: 10px;
 
 }
-.feed_avatar{
+
+.feed_avatar {
     border-radius: 50%;
     object-fit: contain;
     align-items: center;

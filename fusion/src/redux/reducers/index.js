@@ -1,7 +1,7 @@
 import useraSlice from "../features/userSlice";
 
 const rootReducers = {
-    user: useraSlice
+  user: useraSlice,
 };
 
-export default rootReducers
+export default rootReducers;

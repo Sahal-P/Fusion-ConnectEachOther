@@ -1,35 +1,32 @@
-.layer-componet-base-container{
+.layer-componet-base-container {
     position: absolute;
     top: 0;
     left: 0;
-    right: var(--devtools-sidebar-width,0);
+    right: var(--devtools-sidebar-width, 0);
     bottom: 0;
-    background: none!important;
+    background: none !important;
     pointer-events: none;
     z-index: 1002;
 
 }
-
 .c-fade-in {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-  }
-  
+}
 .c-fade-out {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-  }
-
-.layer-componet-base{
+}
+.layer-componet-base {
     position: absolute;
     pointer-events: auto;
 }
-.layer-animator-bottom-scale{
+.layer-animator-bottom-scale {
     transform: scale(1);
     opacity: 1;
     transform-origin: top center;
 }
-.layer-componet-base-menu{
+.layer-componet-base-menu {
     width: 220px;
     z-index: 1;
     -webkit-box-sizing: border-box;
@@ -45,7 +42,7 @@
     background: #101113;
     border-radius: 4px;
 }
-.layer-componet-scroller-base{
+.layer-componet-scroller-base {
     padding: 6px 8px;
     position: relative;
     -webkit-box-sizing: border-box;
@@ -55,10 +52,12 @@
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
 }
-.layer-componet-scroller-base::-webkit-scrollbar{
+
+.layer-componet-scroller-base::-webkit-scrollbar {
     display: none;
 }
-.layer-groupe-item{
+
+.layer-groupe-item {
     color: rgb(179, 179, 179);
     border-color: var(--interactive-normal);
     -webkit-box-sizing: border-box;
@@ -81,7 +80,8 @@
     line-height: 18px;
     cursor: pointer;
 }
-.layer-groupe-item-label{
+
+.layer-groupe-item-label {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -89,7 +89,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.layer-group-icon-container{
+
+.layer-group-icon-container {
     position: relative;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
@@ -98,42 +99,47 @@
     width: 18px;
     margin-left: 8px;
 }
-.layer-group-icon{
+
+.layer-group-icon {
     width: 18px;
     height: 18px;
 }
-.layer-group-seperator{
+
+.layer-group-seperator {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 4px;
     border-bottom: 1px solid #36393f;
 }
-.layer-item-default{
+
+.layer-item-default {
     color: rgb(104, 104, 207);
 }
 
-.layer-item-default-leave{
+.layer-item-default-leave {
     color: rgb(243, 71, 71);
 }
 
-.layer-popout-profile-bottom{
-    transition:opacity .08s ease-out;
+.layer-popout-profile-bottom {
+    transition: opacity .08s ease-out;
     opacity: 1;
 }
 
-.layer-popout-account-profile-wrapper{
+.layer-popout-account-profile-wrapper {
     position: relative;
     left: -28px;
 
 }
-.layer-popout-account-profile-userpopout-outer{
+
+.layer-popout-account-profile-userpopout-outer {
     box-shadow: var(--elevation-high);
     max-height: calc(100vh - 20px);
     width: 340px;
     border-radius: 8px;
     overflow: hidden;
 }
-.layer-popout-account-profile-userpopout-inner{
+
+.layer-popout-account-profile-userpopout-inner {
     max-height: calc(100vh - 28px);
     background: #36393f;
     display: -webkit-box;
@@ -148,7 +154,8 @@
     flex-grow: 1;
     border-radius: 8px 8px 0 0;
 }
-.layer-popout-account-profile-userpopout-inner::before{
+
+.layer-popout-account-profile-userpopout-inner::before {
     border-radius: 4px;
     height: calc(100% - 8px);
     width: calc(100% - 8px);
@@ -157,18 +164,21 @@
     background-color: var(--profile-gradient-overlay-color);
     position: absolute;
 }
-.layer-popout-profile-banner-svg-wrapper{
+
+.layer-popout-profile-banner-svg-wrapper {
     z-index: 0;
     contain: paint;
 
 }
-.layer-profile-banner-popout{
+
+.layer-profile-banner-popout {
     height: 60px;
     -webkit-transition: background-color .1s;
     transition: background-color .1s;
     width: 100%;
 }
-.layer-popout-profile-avatar-wrapper{
+
+.layer-popout-profile-avatar-wrapper {
     top: 16px;
     cursor: pointer;
     border-radius: 50%;
@@ -176,14 +186,17 @@
     z-index: 0;
     left: 22px;
 }
-.layer-popout-profile-avatarHoverTarget{
+
+.layer-popout-profile-avatarHoverTarget {
     border-radius: 50%;
 }
-.layer-popout-profile-avatarHoverTarget-wrapper{
+
+.layer-popout-profile-avatarHoverTarget-wrapper {
     position: relative;
     border-radius: 50%;
 }
-.layer-popout-profile-avatarHoverTarget-wrapper-mask{
+
+.layer-popout-profile-avatarHoverTarget-wrapper-mask {
     position: absolute;
     border-radius: 50%;
     pointer-events: none;
@@ -192,7 +205,8 @@
     contain: paint;
 
 }
-.layer-profile-banner-popout-pencil-conatiner{
+
+.layer-profile-banner-popout-pencil-conatiner {
     top: 10px;
     right: 12px;
 }
@@ -219,18 +233,21 @@
     color: white;
 
 }
+
 .layer-profile-popout-avatarStack {
     display: grid;
     width: 100%;
     height: 100%;
 }
-.layer-profile-popout-avatar::before{
+
+.layer-profile-popout-avatar::before {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
     background-color: #36393f;
 }
+
 .layer-profile-popout-avatar {
     display: block;
     -o-object-fit: cover;
@@ -241,7 +258,8 @@
     height: 100%;
     grid-area: 1/1;
 }
-.layer-profile-popout-avatarHint{
+
+.layer-profile-popout-avatarHint {
     contain: paint;
     position: absolute;
     opacity: 0;
@@ -251,7 +269,8 @@
     top: 0;
     left: 0;
 }
-.layer-profile-popout-avatarHint-inner{
+
+.layer-profile-popout-avatarHint-inner {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 10px;
@@ -278,7 +297,7 @@
     color: white;
 }
 
-.layer-profile-userPopoutOverlayBackground{
+.layer-profile-userPopoutOverlayBackground {
     margin: 28px 16px 16px;
     max-height: calc(100vh - 128px);
     position: relative;
@@ -293,26 +312,32 @@
     flex-direction: column;
     overflow: hidden;
 }
-.layer-profile-usernameSection{
+
+.layer-profile-usernameSection {
     padding-top: 12px;
     padding-right: 12px;
     padding-left: 12px;
 }
-.layer-profile-userPopoutOverlayBackground::-webkit-scrollbar{
+
+.layer-profile-userPopoutOverlayBackground::-webkit-scrollbar {
     display: none;
 }
-.layer-profile-copiableField-Wrapper{
+
+.layer-profile-copiableField-Wrapper {
     display: flex;
     cursor: pointer;
     padding-right: 8px;
 }
-.layer-profile-copiable-childWrapper{
+
+.layer-profile-copiable-childWrapper {
     flex: 1;
 }
-.layer-profile-copiable-usertext{
+
+.layer-profile-copiable-usertext {
     user-select: text;
 }
-.layer-profile-copiable-userTagNoNickname{
+
+.layer-profile-copiable-userTagNoNickname {
     font-size: 20px;
     line-height: 24px;
     word-break: break-word;
@@ -325,7 +350,8 @@
     overflow: hidden;
     -webkit-box-pack: start;
 }
-.layer-profile-username{
+
+.layer-profile-username {
     color: white;
     font-weight: 600;
     overflow: auto;
@@ -337,20 +363,23 @@
     -webkit-box-flex: 0;
 
 }
-.layer-profile-username-tagid{
+
+.layer-profile-username-tagid {
     font-weight: 600;
     color: white;
     vertical-align: top;
 
 }
-.layer-profile-copiable-copyIcon{
+
+.layer-profile-copiable-copyIcon {
     display: block;
     visibility: visible;
     padding-top: 4px;
     padding-left: 4px;
     color: white;
 }
-.layer-profile-divider{
+
+.layer-profile-divider {
     margin: 12px 12px 0;
     height: 1px;
     position: sticky;
@@ -358,9 +387,9 @@
     background-color: #60646b;
 
 }
-.layer-profile-first-scroller{
 
-}
-.layer-profile-first-scroller::-webkit-scrollbar{
+.layer-profile-first-scroller {}
+
+.layer-profile-first-scroller::-webkit-scrollbar {
     display: none;
 }

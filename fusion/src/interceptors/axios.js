@@ -1,32 +1,36 @@
 import axios from "axios";
-import { useDispatch } from 'react-redux';
-import { authActions } from '../redux/features/authSlice';
+import { useDispatch } from "react-redux";
+import { authActions } from "../redux/features/authSlice";
 
-
-axios.defaults.baseURL = "https://fusion.com/api/"
-axios.defaults.withCredentials = true
+axios.defaults.baseURL = "https://fusion.com/api/";
+axios.defaults.withCredentials = true;
 
 let refresh = false;
 
-axios.interceptors.response.use(resp => resp, async error =>{
-    if (error.response.status === 401 && !refresh){
-        refresh = true;
-        const response = await axios.post('refresh-token');
+axios.interceptors.response.use(
+  (resp) => resp,
+  async (error) => {
+    if (error.response.status === 401 && !refresh) {
+      refresh = true;
+      const response = await axios.post("refresh-token");
 
-        if(response.status === 200){
-            localStorage.setItem('access-token', JSON.stringify(response.data.token));
-            return axios(error.config);
-        }
-        else{
-            const dispatch = useDispatch();
-            localStorage.removeItem('auth');
-            dispatch(authActions.setAuth(false))
-          }
+      if (response.status === 200) {
+        localStorage.setItem(
+          "access-token",
+          JSON.stringify(response.data.token)
+        );
+        return axios(error.config);
+      } else {
+        const dispatch = useDispatch();
+        localStorage.removeItem("auth");
+        dispatch(authActions.setAuth(false));
+      }
     }
     refresh = false;
 
     return error;
-})
+  }
+);
 
 // axios.interceptors.request.use(
 //     (config) => {
