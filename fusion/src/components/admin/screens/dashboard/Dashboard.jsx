@@ -1,6 +1,6 @@
-import React from 'react'
-import Header from '../../header/Header'
-import { Box } from '@mui/material'
+import React from "react";
+import Header from "../../header/Header";
+import { Box } from "@mui/material";
 
 export const Dashboard = () => {
   return (
@@ -9,5 +9,5 @@ export const Dashboard = () => {
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
       </Box>
     </Box>
-  )
-}
+  );
+};

@@ -3,30 +3,28 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { LOGIN, SIGNUP, SIGNOUT } from "../../../constants/constants";
 
-
-const name = 'createChannelPop'
+const name = "createChannelPop";
 const initialState = createinitialState();
 const reducers = createReducers();
 // const extraActions = createExtraActions();
-const slice = createSlice({ name, initialState, reducers })
+const slice = createSlice({ name, initialState, reducers });
 
-export const CreateChannelActions = { ...slice.actions};
+export const CreateChannelActions = { ...slice.actions };
 export const CreateChannelReducers = slice.reducer;
 
-
 function createinitialState() {
-    return{
-    value : false,
-    }
-    }
+  return {
+    value: false,
+  };
+}
 
-function createReducers(){
-    return {
-        setChannelPop
-    };
-    function setChannelPop(state, action){
-        state.value = action.payload;   
-    }
+function createReducers() {
+  return {
+    setChannelPop,
+  };
+  function setChannelPop(state, action) {
+    state.value = action.payload;
+  }
 }
 
 // function createExtraActions(){
@@ -71,7 +69,6 @@ function createReducers(){
 //             })
 //     }
 
-
 //     function logout(){
 //         return createAsyncThunk(
 //             `${name}/logout`,
@@ -83,7 +80,6 @@ function createReducers(){
 //         )
 //     }
 // }
-
 
 // export const authSlice = createSlice({
 //     name : 'auth',

@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
     display: flex;
     flex-direction: column;
     flex: 0.14;
@@ -7,14 +7,14 @@
     background-color: #2f3135;
 }
 
-@media only screen and (max-width: 449px){
-    .sidebar{
+@media only screen and (max-width: 449px) {
+    .sidebar {
         display: none;
-        
+
     }
 }
 
-.sidebar_top{
+.sidebar_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,17 +24,19 @@
     border-bottom: 3px solid #26282c;
 }
 
-.sidebar_channels{
+.sidebar_channels {
     flex: 1;
 }
-.sidebar_addChannel{
+
+.sidebar_addChannel {
     cursor: pointer;
 }
-.sidebar_addChannel:hover{
+
+.sidebar_addChannel:hover {
     color: white;
 }
 
-.sidebar_channelsHeader{
+.sidebar_channelsHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,17 +45,18 @@
     color: gray;
 }
 
-.sidebar_header{
+.sidebar_header {
     display: flex;
     align-items: center;
 }
 
-.channels_list{
+.channels_list {
     display: block;
     transition: height 0.5s;
 }
 
-.sidebar_voice, .sidebar_profile {
+.sidebar_voice,
+.sidebar_profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,39 +66,43 @@
     border-top: 3px solid #26282c;
 }
 
-.sidebar_voice_info{
+.sidebar_voice_info {
     flex: 1;
     padding: 10px;
 }
-.sidebar_voice_icon-{
+
+.sidebar_voice_icon- {
     color: #4fb185;
 }
-.sidebar_voice_info > h3{
+
+.sidebar_voice_info>h3 {
     font-size: medium;
     color: #4fb185;
 }
-.sidebar_voice_info > p{
+
+.sidebar_voice_info>p {
     font-size: smaller;
 }
-.sidebar_voice_icon > .MuiSvgIcon-root{
+
+.sidebar_voice_icon>.MuiSvgIcon-root {
     cursor: pointer;
     padding: 6px;
 }
 
-.sidebar_profile_info{
+.sidebar_profile_info {
     flex: 1;
     padding: 10px;
 }
-.sidebar_profile_info > h3{
+
+.sidebar_profile_info>h3 {
     color: white;
 }
 
-.sidebar_profile_info > p{
+.sidebar_profile_info>p {
     font-size: smaller;
 }
 
-.sidebar_profile_icons > .MuiSvgIcon-root{
+.sidebar_profile_icons>.MuiSvgIcon-root {
     cursor: pointer;
     padding: 3px;
 }
-

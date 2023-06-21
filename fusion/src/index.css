@@ -1,13 +1,16 @@
-*{
+* {
   margin: 0;
 }
-body{
+
+body {
   background: #2b2d31;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .theme-dark.custom-theme-background {
   --bg-overlay-color: 0 0 0;
   --bg-overlay-color-inverse: 255 255 255;
@@ -28,6 +31,7 @@ code {
   --bg-overlay-opacity-home-card: 0.8;
   --bg-overlay-opacity-app-frame: var(--bg-overlay-opacity-4)
 }
+
 strong {
   font-weight: 600
 }
@@ -48,29 +52,44 @@ code {
 :root {
   --decoration-to-avatar-ratio: 1.2
 }
-ol,ul {
+
+ol,
+ul {
   list-style: none
 }
 
-::-webkit-input-placeholder,input,select,textarea {
+::-webkit-input-placeholder,
+input,
+select,
+textarea {
   font-family: var(--font-primary);
   font-weight: 400
 }
 
-::-moz-placeholder,input,select,textarea {
+::-moz-placeholder,
+input,
+select,
+textarea {
   font-family: var(--font-primary);
   font-weight: 400
 }
 
-:-ms-input-placeholder,input,select,textarea {
+:-ms-input-placeholder,
+input,
+select,
+textarea {
   font-family: var(--font-primary);
   font-weight: 400
 }
 
-::placeholder,input,select,textarea {
+::placeholder,
+input,
+select,
+textarea {
   font-family: var(--font-primary);
   font-weight: 400
 }
+
 a {
   color: var(--text-link);
   text-decoration: none;
@@ -97,60 +116,72 @@ body {
 p {
   margin: 14px 0
 }
+
 :root {
-  --font-primary: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-display: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-headline: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+  --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-headline: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-:root,:root:lang(bg),:root:lang(el),:root:lang(ru),:root:lang(uk) {
-  --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
+:root,
+:root:lang(bg),
+:root:lang(el),
+:root:lang(ru),
+:root:lang(uk) {
+  --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
 }
 
-:root:lang(bg),:root:lang(el),:root:lang(ru),:root:lang(uk) {
-  --font-primary: "Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-display: "Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-headline: "Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+:root:lang(bg),
+:root:lang(el),
+:root:lang(ru),
+:root:lang(uk) {
+  --font-primary: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-headline: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 :root:lang(ko) {
-  --font-primary: "gg sans","Apple SD Gothic Neo",NanumBarunGothic,"\B9D1\C740   \ACE0\B515","Malgun Gothic",Gulim,êµ´ë¦¼,Dotum,ë‹ì›€,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-display: "gg sans","Apple SD Gothic Neo",NanumBarunGothic,"\B9D1\C740   \ACE0\B515","Malgun Gothic",Gulim,êµ´ë¦¼,Dotum,ë‹ì›€,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-headline: "ABC Ginto Nord","Apple SD Gothic Neo",NanumBarunGothic,"\B9D1\C740   \ACE0\B515","Malgun Gothic",Gulim,êµ´ë¦¼,Dotum,ë‹ì›€,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+  --font-primary: "gg sans", "Apple SD Gothic Neo", NanumBarunGothic, "\B9D1\C740   \ACE0\B515", "Malgun Gothic", Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "gg sans", "Apple SD Gothic Neo", NanumBarunGothic, "\B9D1\C740   \ACE0\B515", "Malgun Gothic", Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-headline: "ABC Ginto Nord", "Apple SD Gothic Neo", NanumBarunGothic, "\B9D1\C740   \ACE0\B515", "Malgun Gothic", Gulim, êµ´ë¦¼, Dotum, ë‹ì›€, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-:root:lang(ja),:root:lang(ko) {
-  --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
+:root:lang(ja),
+:root:lang(ko) {
+  --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
 }
 
 :root:lang(ja) {
-  --font-primary: "gg sans","Hiragino Sans","\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3","Hiragino Kaku Gothic ProN",ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,Osaka,"MS PGothic","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-display: "gg sans","Hiragino Sans","\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3","Hiragino Kaku Gothic ProN",ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,Osaka,"MS PGothic","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-headline: "ABC Ginto Nord","Hiragino Sans","\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3","Hiragino Kaku Gothic ProN",ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,Osaka,"MS PGothic","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+  --font-primary: "gg sans", "Hiragino Sans", "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", "Hiragino Kaku Gothic ProN", ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, "MS PGothic", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "gg sans", "Hiragino Sans", "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", "Hiragino Kaku Gothic ProN", ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, "MS PGothic", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-headline: "ABC Ginto Nord", "Hiragino Sans", "\30D2\30E9\30AE\30CE\89D2\30B4   ProN W3", "Hiragino Kaku Gothic ProN", ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, Osaka, "MS PGothic", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 :root:lang(zh-CN) {
-  --font-primary: "gg sans","Microsoft YaHei New",å¾®è½¯é›…é»‘,"Microsoft Yahei","Microsoft JhengHei",å®‹ä½“,SimSun,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-display: "gg sans","Microsoft YaHei New",å¾®è½¯é›…é»‘,"Microsoft Yahei","Microsoft JhengHei",å®‹ä½“,SimSun,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-headline: "ABC Ginto Nord","Microsoft YaHei New",å¾®è½¯é›…é»‘,"Microsoft Yahei","Microsoft JhengHei",å®‹ä½“,SimSun,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+  --font-primary: "gg sans", "Microsoft YaHei New", å¾®è½¯é›…é»‘, "Microsoft Yahei", "Microsoft JhengHei", å®‹ä½“, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "gg sans", "Microsoft YaHei New", å¾®è½¯é›…é»‘, "Microsoft Yahei", "Microsoft JhengHei", å®‹ä½“, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-headline: "ABC Ginto Nord", "Microsoft YaHei New", å¾®è½¯é›…é»‘, "Microsoft Yahei", "Microsoft JhengHei", å®‹ä½“, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-:root:lang(zh-CN),:root:lang(zh-TW) {
-  --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace
+:root:lang(zh-CN),
+:root:lang(zh-TW) {
+  --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
 }
 
 :root:lang(zh-TW) {
-  --font-primary: "gg sans","Microsoft JhengHei",å¾®è»Ÿæ­£é»‘é«”,"Microsoft JhengHei UI","Microsoft YaHei",å¾®è»Ÿé›…é»‘,å®‹ä½“,SimSun,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-display: "gg sans","Microsoft JhengHei",å¾®è»Ÿæ­£é»‘é«”,"Microsoft JhengHei UI","Microsoft YaHei",å¾®è»Ÿé›…é»‘,å®‹ä½“,SimSun,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-headline: "ABC Ginto Nord","Microsoft JhengHei",å¾®è»Ÿæ­£é»‘é«”,"Microsoft JhengHei UI","Microsoft YaHei",å¾®è»Ÿé›…é»‘,å®‹ä½“,SimSun,"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+  --font-primary: "gg sans", "Microsoft JhengHei", å¾®è»Ÿæ­£é»‘é«”, "Microsoft JhengHei UI", "Microsoft YaHei", å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "gg sans", "Microsoft JhengHei", å¾®è»Ÿæ­£é»‘é«”, "Microsoft JhengHei UI", "Microsoft YaHei", å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-headline: "ABC Ginto Nord", "Microsoft JhengHei", å¾®è»Ÿæ­£é»‘é«”, "Microsoft JhengHei UI", "Microsoft YaHei", å¾®è»Ÿé›…é»‘, å®‹ä½“, SimSun, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
+
 .theme-dark {
   --guild-header-text-shadow: 0 1px 1px hsl(var(--black-500-hsl)/0.4);
   --elevation-stroke: 0 0 0 1px hsl(var(--primary-900-hsl)/0.15);
-  --elevation-low: 0 1px 0 hsl(var(--primary-900-hsl)/0.2),0 1.5px 0 hsl(var(--primary-860-hsl)/0.05),0 2px 0 hsl(var(--primary-900-hsl)/0.05);
+  --elevation-low: 0 1px 0 hsl(var(--primary-900-hsl)/0.2), 0 1.5px 0 hsl(var(--primary-860-hsl)/0.05), 0 2px 0 hsl(var(--primary-900-hsl)/0.05);
   --elevation-medium: 0 4px 4px hsl(var(--black-500-hsl)/0.16);
   --elevation-high: 0 8px 16px hsl(var(--black-500-hsl)/0.24)
 }
+
 :root {
   --spacing-4: 4px;
   --spacing-8: 8px;
@@ -173,29 +204,30 @@ p {
   --radius-xxl: 32px;
   --radius-round: 2147483647px
 }
+
 .theme-dark {
-  --shadow-border: 0 0 0 1px hsla(0,0%,100%,0.08);
-  --shadow-border-filter: drop-shadow(0 0 1px hsla(0,0%,100%,0.08));
-  --shadow-high: 0 12px 24px 0 rgba(0,0,0,0.24);
-  --shadow-high-filter: drop-shadow(0 12px 24px rgba(0,0,0,0.24));
-  --shadow-ledge: 0 2px 0 0 rgba(0,0,0,0.05),0 1.5px 0 0 rgba(0,0,0,0.05),0 1px 0 0 rgba(0,0,0,0.16);
-  --shadow-ledge-filter: drop-shadow(0 1.5px 0 rgba(0,0,0,0.24));
-  --shadow-low: 0 1px 4px 0 rgba(0,0,0,0.14);
-  --shadow-low-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.14));
-  --shadow-low-active: 0 0 4px 0 rgba(0,0,0,0.14);
-  --shadow-low-active-filter: drop-shadow(0 0 4px rgba(0,0,0,0.14));
-  --shadow-low-hover: 0 4px 10px 0 rgba(0,0,0,0.14);
-  --shadow-low-hover-filter: drop-shadow(0 4px 10px rgba(0,0,0,0.14));
-  --shadow-medium: 0 4px 8px 0 rgba(0,0,0,0.16);
-  --shadow-medium-filter: drop-shadow(0 4px 8px rgba(0,0,0,0.16));
-  --shadow-mobile-navigator-x: 0 0 10px 0 rgba(0,0,0,0.22);
-  --shadow-mobile-navigator-x-filter: drop-shadow(0 0 10px rgba(0,0,0,0.22));
-  --shadow-top-high: 0 -12px 32px 0 rgba(0,0,0,0.24);
-  --shadow-top-high-filter: drop-shadow(0 -12px 32px rgba(0,0,0,0.24));
-  --shadow-top-ledge: 0 -2px 0 0 rgba(0,0,0,0.05),0 -1.5px 0 0 rgba(0,0,0,0.05),0 -1px 0 0 rgba(0,0,0,0.16);
-  --shadow-top-ledge-filter: drop-shadow(0 -1.5px 0 rgba(0,0,0,0.24));
-  --shadow-top-low: 0 -1px 4px 0 rgba(0,0,0,0.14);
-  --shadow-top-low-filter: drop-shadow(0 -1px 4px rgba(0,0,0,0.14))
+  --shadow-border: 0 0 0 1px hsla(0, 0%, 100%, 0.08);
+  --shadow-border-filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, 0.08));
+  --shadow-high: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+  --shadow-high-filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.24));
+  --shadow-ledge: 0 2px 0 0 rgba(0, 0, 0, 0.05), 0 1.5px 0 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(0, 0, 0, 0.16);
+  --shadow-ledge-filter: drop-shadow(0 1.5px 0 rgba(0, 0, 0, 0.24));
+  --shadow-low: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  --shadow-low-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.14));
+  --shadow-low-active: 0 0 4px 0 rgba(0, 0, 0, 0.14);
+  --shadow-low-active-filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.14));
+  --shadow-low-hover: 0 4px 10px 0 rgba(0, 0, 0, 0.14);
+  --shadow-low-hover-filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.14));
+  --shadow-medium: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  --shadow-medium-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.16));
+  --shadow-mobile-navigator-x: 0 0 10px 0 rgba(0, 0, 0, 0.22);
+  --shadow-mobile-navigator-x-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.22));
+  --shadow-top-high: 0 -12px 32px 0 rgba(0, 0, 0, 0.24);
+  --shadow-top-high-filter: drop-shadow(0 -12px 32px rgba(0, 0, 0, 0.24));
+  --shadow-top-ledge: 0 -2px 0 0 rgba(0, 0, 0, 0.05), 0 -1.5px 0 0 rgba(0, 0, 0, 0.05), 0 -1px 0 0 rgba(0, 0, 0, 0.16);
+  --shadow-top-ledge-filter: drop-shadow(0 -1.5px 0 rgba(0, 0, 0, 0.24));
+  --shadow-top-low: 0 -1px 4px 0 rgba(0, 0, 0, 0.14);
+  --shadow-top-low-filter: drop-shadow(0 -1px 4px rgba(0, 0, 0, 0.14))
 }
 
 .theme-dark {

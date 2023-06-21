@@ -1,6 +1,3 @@
-
 export const Geography = () => {
-  return (
-    <div>Geography</div>
-  )
-}
+  return <div>Geography</div>;
+};

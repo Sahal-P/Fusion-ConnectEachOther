@@ -1,10 +1,8 @@
-import React from 'react'
-import GroupVoiceChat from './GroupVoiceChat'
+import React from "react";
+import GroupVoiceChat from "./GroupVoiceChat";
 
 const GroupVoice = () => {
-  return (
-    <GroupVoiceChat/>
-  )
-}
+  return <GroupVoiceChat />;
+};
 
-export default GroupVoice
+export default GroupVoice;

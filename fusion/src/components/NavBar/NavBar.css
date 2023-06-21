@@ -1,4 +1,4 @@
-.nav_bar{
+.nav_bar {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -10,13 +10,13 @@
 
 }
 
-.expand_div{
+.expand_div {
     margin-left: 1rem;
-/*    background-color: green;*/
-    
+    /*    background-color: green;*/
+
 }
 
-.expand_button{
+.expand_button {
     color: white;
     cursor: pointer;
 }
