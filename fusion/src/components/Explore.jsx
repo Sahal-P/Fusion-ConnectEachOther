@@ -54,15 +54,15 @@ const Explore = () => {
   }
   return (
     <div className="flex flex-col flex-[0.82] h-[100vh] bg-[#26272b] text-gray-400 items-center relative">
-      <div className="top_notification"></div>
-      <div className="scroller_base">
-        <div className="image_explore">
-          <div className="image_e">
-            <img className="explore_img" src={Explore9} alt="" />
-            <div className="explore_search_box">
-              <div className="search_field">
-                <h1 class="explore_text1">Find your community on Fusion</h1>
-                <div class="explore_text2">
+      <div className=""></div>
+      <div className="overflow-hidden overflow-y-scroll p-8 relative box-border min-h-0 flex-1 scroller_base">
+        <div className="max-w-[1608px] mx-auto">
+          <div className="relative text-center min-h-[200px]">
+            <img className="inherit rounded-[8px] w-[150vh] max-h-[500px]" src={Explore9} alt="" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full min-w-[160px] max-w-[720px] mx-24">
+                <h1 class="text-white text-[24px] leading-[30px] text-center">Find your community on Fusion</h1>
+                <div class="mt-[8px] text-white text-[16px] leading-[20px]">
                   From gaming, to music, to learning, there's a place for you.
                 </div>
                 {/* <div className="explore_input_box">
@@ -75,9 +75,10 @@ const Explore = () => {
                                         </div>
                                     </div>
                                 </div> */}
-                <div className="search-bar-container">
-                  <div className="explore-input-wrapper">
+                <div className="mt-[20px] flex flex-col items-center min-w-[200px]">
+                  <div className="bg-white w-[80%] rounded-md h-10 p-0.5rem shadow-md flex items-center explore-input-wrapper px-[15px]">
                     <input
+                      className="bg-transparent border-0 h-full text-lg w-full ml-1"
                       type="text"
                       placeholder="Search"
                       value={input}
@@ -85,10 +86,10 @@ const Explore = () => {
                     />
                     <SearchIcon id="explore-search-icon" />
                   </div>
-                  <div className="explore-search-result-list">
+                  <div className="w-85 bg-white flex flex-col shadow-md rounded-md mt-4 max-h-200 overflow-y-scroll text-left">
                     {results.map((result, id) => {
                       return (
-                        <div className="explore-search-results" key={id}>
+                        <div className="text-black p-[5px] hover:bg-[#efefef]" key={id}>
                           {result}
                         </div>
                       );
@@ -99,9 +100,9 @@ const Explore = () => {
             </div>
           </div>
         </div>
-        <div className="featured_h2">Featured communities</div>
-        <div className="features">
-          <div className="featured_grid">
+        <div className="text-[20px] font-semibold text-white p-[10px]">Featured communities</div>
+        <div className="h-max">
+          <div className="grid gap-[16px] grid-cols-featured_grid">
             <FeaturedCommunitiesCard
               title={"Midjourney"}
               text={
