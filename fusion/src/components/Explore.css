@@ -1,14 +1,4 @@
-.Explorewindow{
-    display: flex;
-    flex-direction: column;
-    flex: 0.82;
-    /* 82 */
-    height: 100vh;
-    background-color: #26272b;
-    color: gray;
-    align-items: center;
-    position: relative;
-}
+
 .search-bar-container{
     margin-top: 20px;
     display: flex;

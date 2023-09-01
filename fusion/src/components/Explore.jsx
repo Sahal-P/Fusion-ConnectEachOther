@@ -51,9 +51,9 @@ const Explore = () => {
     } catch (error) {
       console.log(error);
     }
-  };
+  }
   return (
-    <div className="Explorewindow">
+    <div className="flex flex-col flex-[0.82] h-[100vh] bg-[#26272b] text-gray-400 items-center relative">
       <div className="top_notification"></div>
       <div className="scroller_base">
         <div className="image_explore">
